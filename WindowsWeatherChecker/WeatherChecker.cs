@@ -89,7 +89,8 @@ namespace WindowsWeatherChecker
             }
             catch (Exception ex)
             {
-                Application.Exit();
+                MessageBox.Show("apikey.txt Missing or invalid.");
+                System.Diagnostics.Process.Start("https://github.com/marcuskongjika/WeatherChecker/blob/master/README.md");
             }
         }
 
